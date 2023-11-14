@@ -8,6 +8,9 @@
     <script src="https://kit.fontawesome.com/b2607e16e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- swiper js stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -161,7 +164,7 @@
         <div class="container faqs__container">
             <article class="faq">
                 <div class="faq__icon">
-                    <i class="fa-solid fa-plus "></i>
+                    <i class="fa-solid fa-plus"></i>
                 </div>
                 <div class="faq__qa">
                     <h4>How do I know the right course for me?</h4>
@@ -232,8 +235,130 @@
     </section>
     <!-- /* ---------------------FAQ section end--------------------------------------------------- */ -->
 
+    <!-- /* -----------------Testimonial section start--------------------------------------------------- */ -->
 
+    <section class=" container testimonials__container mySwiper">
+        <h2>Student's Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="testimonial__photo">
+                    <img src="./eduwebsite_images/avatar1.jpg" alt="student photo">
+                </div>
+                <div class="testimonial__info">
+                    <h4>Mallika Arora</h4>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, rerum. Lorem ipsum dolor sit
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, cumque.
+                        amet.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="testimonial__photo">
+                    <img src="./eduwebsite_images/avatar2.jpg" alt="student photo">
+                </div>
+                <div class="testimonial__info">
+                    <h4>Sagar Kumar</h4>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, rerum. Lorem ipsum dolor sit
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, cumque.
+                        amet.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="testimonial__photo">
+                    <img src="./eduwebsite_images/avatar3.jpg" alt="student photo">
+                </div>
+                <div class="testimonial__info">
+                    <h4>Alex Ayi</h4>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, rerum. Lorem ipsum dolor sit
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, cumque.
+                        amet.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="testimonial__photo">
+                    <img src="./eduwebsite_images/avatar4.jpg" alt="student photo">
+                </div>
+                <div class="testimonial__info">
+                    <h4>Sara Khalid</h4>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, rerum. Lorem ipsum dolor sit
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, cumque.
+                        amet.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="testimonial__photo">
+                    <img src="./eduwebsite_images/avatar5.jpg" alt="student photo">
+                </div>
+                <div class="testimonial__info">
+                    <h4>Eva Smith</h4>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, rerum. Lorem ipsum dolor sit
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, cumque.
+                        amet.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="testimonial__photo">
+                    <img src="./eduwebsite_images/avatar6.jpg" alt="student photo">
+                </div>
+                <div class="testimonial__info">
+                    <h4>Farah Harris</h4>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, rerum. Lorem ipsum dolor sit
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, cumque.
+                        amet.</p>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+
+    <!-- /* -----------------Testimonial section end--------------------------------------------------- */ -->
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // When window more than 600px width (mediaquery)
+            breakpoints: {
+                600:
+                {
+                    slidesPerView: 2
+                }
+            }
+
+        });
+
+    </script>
 </body>
 
 </html>
