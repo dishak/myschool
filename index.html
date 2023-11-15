@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Education Website using HTML CSS JS </title>
     <script src="https://kit.fontawesome.com/b2607e16e6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+
 
     <!-- swiper js stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -17,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+            <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -237,7 +239,7 @@
 
     <!-- /* -----------------Testimonial section start--------------------------------------------------- */ -->
 
-    <section class=" container testimonials__container mySwiper">
+    <section class=" container testimonials__container  mySwiper">
         <h2>Student's Testimonials</h2>
         <div class="swiper-wrapper">
             <article class="testimonial swiper-slide">
@@ -338,27 +340,44 @@
 
  
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- no autoplay effect swiper -->
     <script src="main.js"></script>
+    <!-- Initialize Swiper only for home/index page -->
+    <!-- <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script> -->
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            // When window more than 600px width (mediaquery)
-            breakpoints: {
-                600:
-                {
-                    slidesPerView: 2
-                }
-            }
 
-        });
+    <!-- Autoplay  swiper effect -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop:true,
+      autoplay: {
+        delay: 2500,
+        pauseOnMouseEnter: true,
 
-    </script>
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
