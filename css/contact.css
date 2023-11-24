@@ -1,0 +1,154 @@
+/* <!-- -----------------------------Contact us details start-------------------------- --> */
+.contact__container {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    border-radius: 2rem;
+    background: var(--color-primary);
+    text-align: flex-start;
+    padding: 0 0.5rem 2rem 2rem;
+}
+
+.contact__image img {
+    width: 40%;
+    height: auto;
+    padding-top: 2rem;
+    margin: 0 1rem 1.5rem 1rem;
+}
+
+.contact__heading h3 {
+    padding-bottom: 2rem;
+}
+
+.contact__heading p {
+    padding-bottom: 2rem;
+}
+
+.contact__container span {
+
+    line-height: 3rem;
+
+}
+
+.contact__socials li {
+    display: inline-block;
+    margin-inline-end: 1.5rem;
+    line-height: 3rem;
+
+}
+
+/* <!-- -----------------------------Contact us details end-------------------------- --> */
+/* <!-- -----------------------------form details start-------------------------- --> */
+
+.contact-form
+{
+    height: 120vh;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+.contact__container
+{
+    position: absolute;
+    top: 20%;
+    left: 8rem;
+}
+form {
+    position: absolute;
+    top: 30%;
+    z-index: -1;
+    background: var(--color-bg1);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 3rem 5rem 3rem 0;
+    
+}
+
+.form__name
+{
+    /* border: 2px solid red; */
+    width: 50%;
+}
+input[type=text] {
+    font-family: 'Times New Roman', Times, serif;
+    width: 49%;
+    margin-top: 1rem;
+    border-radius: .1rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+input[type=text],
+input[type=email] {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: .1rem;
+    line-height: 2rem;
+    background: var(--color-bg);
+
+}
+
+textarea,
+input[type=email] {
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    border-radius: 0.3rem;
+    background: var(--color-bg);
+
+}
+button{
+    cursor: pointer;
+    margin: auto;
+    border-radius: 1rem;
+    transform: translateX(50%);
+}
+
+/* <!-- -----------------------------form details end-------------------------- --> */
+
+/* /* -------------------media queries  tablets mobile phones start-------------------- * */
+@media screen and (max-width:1024px)
+{
+    .container {
+        width: var(--container-width-md);
+    }
+    .contact__container
+{
+   width: 40%;
+   top: 27%;
+    left: 1rem;
+}
+
+}
+
+@media screen and (max-width:620px)
+{
+    .contact-form
+    {
+        height: 130vh;
+    }
+    .container {
+        width: var(--container-width-sm);
+    }
+    .contact__container
+{
+    width: 90%;
+    top: 12%;
+    left: 1rem;
+}
+form
+{
+    top: 77%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+input[type=text]
+{
+    width: 100%;
+
+}
+
+}
+
+/* -------------------media queries  tablets mobile phones end-------------------- */

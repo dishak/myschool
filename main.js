@@ -20,3 +20,37 @@ faqs.forEach(faq=>{
        }
     })
 })
+
+
+// show hide navbar
+let Menu = document.querySelector(".nav__menu")
+let OpenBtn=document.querySelector("#menu_open")
+let CloseBtn=document.querySelector("#menu_close")
+let OpenBtnId = document.getElementById("menu_open")
+
+
+OpenBtn.addEventListener('click',()=>{
+    Menu.style.display = "block"
+    CloseBtn.style.display = "inline-block"
+    OpenBtn.style.display = "none"
+})
+
+CloseBtn.addEventListener('click',()=>{
+    Menu.style.display = "none"
+    OpenBtn.style.display = "inline-block"
+    CloseBtn.style.display = "none"
+})
+
+// hide nav bar hamburger menu when user clicks elsewhere on screen if it is open
+window.onclick = function(event)
+{
+    if(!(event.target == OpenBtnId || event.target.parentNode == OpenBtnId))
+    {
+        Menu.style.display = "none"
+        OpenBtn.style.display = "inline-block"
+        CloseBtn.style.display = "none"
+    }
+}
+
+
+

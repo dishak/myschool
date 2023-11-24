@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Education Website using HTML CSS JS </title>
+    <script src="https://kit.fontawesome.com/b2607e16e6.js" crossorigin="anonymous"></script>
+
+
+    <!-- swiper js stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <h4>DISHA</h4>
+            </a>
+            <ul class="nav__menu ">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="menu_open"><i class="fa-solid fa-bars"></i></button>
+            <button id="menu_close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+    <!---------------------------------------- end of navbar ---------------------------------->
+
+
+    <section class="contact-form container">
+
+        <!-- -----------------------------Contact us details start-------------------------- -->
+        <div class="contact__container ">
+            <div class="contact__image">
+                <img src="./eduwebsite_images/contact.svg" alt="">
+            </div>
+            <div class="contact__heading">
+                <h3>Contact Us</h3>
+                <p>Want to know more, you can contact us on following details mentioned below</p>
+            </div>
+            <div class="contact__number">
+                
+                <p><span class="phone__icon"><i class="fa fa-phone" aria-hidden="true"></i></span>  +91875875986</p>
+
+            </div>
+            <div class="contact__email">
+                
+
+                <p><span class="email__icon"><i class="fa fa-envelope" aria-hidden="true"></i></span> disha.kartrrd@xyz.com</p>
+            </div>
+            <div class="contact__address">
+                
+                <span class="contact__location">
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+                India + Germany</p>
+            </div>
+            <ul class="contact__socials">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <!-- -----------------------------Contact us details end-------------------------- -->
+         <!-- -----------------------------form start-------------------------- -->
+        <form class="container">
+            <div class="form__name">
+                <input type="text" name="First Name" placeholder=" Your First Name" required>
+                <input type="text" name="Second Name" placeholder=" Your Second Name" required>
+            </div>
+            <input type="email" name="Email Address" placeholder=" Ex: abc.xyz@gmail.com">
+            <textarea name="response" placeholder=" Type your message here" cols="30" rows="10"></textarea>
+            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+        </form>
+         <!-- -----------------------------form end-------------------------- -->
+    </section>
+
+    <!-- /* -----------------Footer section start--------------------------------------------------- */ -->
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html">
+                    <h4>DISHA</h4>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi blanditiis corrupti quasi sunt
+                    placeat libero nobis maxime eaque harum vel.</p>
+            </div>
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+49 15906xxx546</p>
+                    <p>dabcdefa.kaxxxxaki@gmail.com</p>
+                </div>
+                <ul class="footer__socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <small>Copyrights &copy; DISHA All Rights Reserved</small>
+        </div>
+    </footer>
+
+    <!-- /* -----------------Footer section end--------------------------------------------------- */ -->
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
