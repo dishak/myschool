@@ -1,6 +1,9 @@
 /* <!-- -----------------------------Contact us details start-------------------------- --> */
 .contact__container {
     position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 8rem;
     width: 25%;
     height: auto;
     border-radius: 2rem;
@@ -42,20 +45,17 @@
 
 .contact-form
 {
+
     height: 120vh;
-    margin-top: 7rem;
-    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
-.contact__container
-{
-    position: absolute;
-    top: 20%;
-    left: 8rem;
-}
+
 form {
     position: absolute;
     top: 30%;
-    z-index: -1;
+   left: 10%;
+    width: 100%;
     background: var(--color-bg1);
     border-radius: 1.5rem;
     display: flex;
@@ -86,6 +86,7 @@ input[type=email] {
     border-radius: .1rem;
     line-height: 2rem;
     background: var(--color-bg);
+    
 
 }
 
@@ -95,6 +96,7 @@ input[type=email] {
     width: 50%;
     border-radius: 0.3rem;
     background: var(--color-bg);
+    color: var(--color-white);
 
 }
 button{
@@ -118,6 +120,10 @@ button{
    top: 27%;
     left: 1rem;
 }
+form
+{
+ left: auto;
+}
 
 }
 
@@ -125,7 +131,7 @@ button{
 {
     .contact-form
     {
-        height: 130vh;
+        height: 140vh;
     }
     .container {
         width: var(--container-width-sm);
@@ -135,6 +141,25 @@ button{
     width: 90%;
     top: 12%;
     left: 1rem;
+}
+
+.contact__heading h3 {
+    padding-bottom: 0.5rem;
+}
+
+.contact__heading p {
+    padding-bottom:  0.5rem;
+}
+
+.contact__container span {
+
+    line-height: 1rem;
+
+}
+.contact__socials li {
+
+    line-height: 1rem;
+
 }
 form
 {
@@ -148,6 +173,12 @@ input[type=text]
     width: 100%;
 
 }
+button
+{
+    transform: translateX(0%);
+    
+}
+
 
 }
 

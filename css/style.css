@@ -147,7 +147,7 @@ nav {
     color: var(--color-bg2);
 }
 
-nav button {
+.nav__container button {
     display: none;
 }
 
